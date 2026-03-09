@@ -43,3 +43,8 @@ a {
   border-radius: 5px;
   border: none;
 }
+
+#signupDiv input {
+  padding: 15px 50px;
+  /* width: 100%; */
+}
