@@ -1,0 +1,26 @@
+import React from 'react';
+
+function RightSection({ imageURL, productName, productDescription, learnMore }) {
+    return (
+        <div className="container mt-5">
+            <div className="row align-items-center">
+                <div className="col-6 p-5">
+                    <h2>{productName}</h2>
+                    <p>{productDescription}</p>
+                    <div>
+                        <a href={learnMore}>
+                            Learn more <i className="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div className="col-6 text-center">
+                    <img src={imageURL} alt="product" className="img-fluid" />
+                </div>
+
+            </div>
+        </div>
+    );
+}
+
+export default RightSection;
